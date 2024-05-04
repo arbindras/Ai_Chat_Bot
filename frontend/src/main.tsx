@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext.tsx";
 import { Toaster } from "react-hot-toast";
 import axios from "axios";
-axios.defaults.baseURL = "https://ai-chat-bot-rho.vercel.app/api/v1";
+axios.defaults.baseURL = "https://ai-chat-bot-rho.vercel.app";
 axios.defaults.withCredentials = true;
 const theme = createTheme({
   typography: {
