@@ -5,7 +5,10 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "/",
+      "headers": {
+        "Access-Control-Allow-Origin": "https://ai-chat-bot-hhui.vercel.app"
+      }
     }
   ],
   "builds": [
