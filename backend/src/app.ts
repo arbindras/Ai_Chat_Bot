@@ -8,7 +8,7 @@ config();
 const app = express();
 
 //middlewares
-app.use(cors({ origin: "https://ai-chat-bot-hhui.vercel.app/api/v1", credentials: true }));
+app.use(cors({ origin: "https://ai-chat-bot-hhui.vercel.app", credentials: true }));
 app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET));
 
