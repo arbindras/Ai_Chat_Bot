@@ -1,20 +1,10 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "/(.*)",
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
-  ],
-  "builds": [
-    {
-      "src": "index.ts",
-      "use": "@vercel/node"
-    }
-  ]
+   "version": 2,
+   "name": "mern-ai-chatbot-backend",
+   "builds": [
+      { "src": "index.ts", "use": "@vercel/node" }
+   ],
+   "routes": [
+      { "src": "/(.*)", "dest": "/index.ts" }
+   ]
 }
